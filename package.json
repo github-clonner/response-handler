@@ -1,0 +1,25 @@
+{
+  "name": "insac-response",
+  "version": "1.0.0",
+  "description": "Configura el formato de la respuesta de un servicio web creado con express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waquispe/insac-response.git"
+  },
+  "keywords": [
+    "insac",
+    "response",
+    "web",
+    "service"
+  ],
+  "author": "Wilmer Alex Quispe Quispe <q.wilmer.alex@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waquispe/insac-response/issues"
+  },
+  "homepage": "https://github.com/waquispe/insac-response#readme"
+}
