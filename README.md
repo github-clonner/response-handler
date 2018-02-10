@@ -86,7 +86,7 @@ app.listen(4000)
   "message": "Condición insuficiente",
   "errors": [
     {
-      "msg": "No se cumple con algunas condiciones que son necesarias para completar la tarea.",
+      "msg": "Se requiere el título del libro.",
       "dev": null
     }
   ]
