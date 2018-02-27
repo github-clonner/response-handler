@@ -1,5 +1,5 @@
 {
-  "name": "insac-response",
+  "name": "response-handler",
   "version": "1.0.0",
   "description": "Configura el formato de la respuesta de un servicio web creado con express.",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waquispe/insac-response.git"
+    "url": "git+https://github.com/waquispe/response-handler.git"
   },
   "keywords": [
-    "insac",
+    "rest",
     "response",
     "web",
     "service"
@@ -21,9 +21,9 @@
   "author": "Wilmer Alex Quispe Quispe <q.wilmer.alex@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waquispe/insac-response/issues"
+    "url": "https://github.com/waquispe/response-handler/issues"
   },
-  "homepage": "https://github.com/waquispe/insac-response#readme",
+  "homepage": "https://github.com/waquispe/response-handler#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "esdoc": "^1.0.4",

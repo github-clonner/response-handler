@@ -57,7 +57,7 @@ describe('\n - Clase: Response\n', () => {
         request(options, (error, response, body) => {
           const { errors } = require(global.LIB)
           if (error) { console.log(error); done() }
-          expect(body).to.have.property('name', 'InsacResponseError')
+          expect(body).to.have.property('name', 'ResponseHandlerError')
           expect(body).to.have.property('status', errors.PreconditionFailedError.STATUS)
           expect(body).to.have.property('type', errors.PreconditionFailedError.TYPE)
           expect(body).to.have.property('code', errors.PreconditionFailedError.CODE)
@@ -69,7 +69,7 @@ describe('\n - Clase: Response\n', () => {
           expect(body.errors[0]).to.have.property('msg')
           console.log('BODY = ', JSON.stringify(body, null, 2))
           // BODY =  {
-          //   "name": "InsacResponseError",
+          //   "name": "ResponseHandlerError",
           //   "status": "error",
           //   "type": "PRECONDITION_FAILED",
           //   "code": 412,

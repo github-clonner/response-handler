@@ -1,4 +1,4 @@
-# Insac Response
+# Response Handler
 
 Configura el formato de la respuesta de un servicio web creado con express.
 
@@ -31,14 +31,14 @@ Configura el formato de la respuesta de un servicio web creado con express.
 
 Para instalar sobre un proyecto, ejecutar el siguiente comando:
 
-$ `sudo npm install --save insac-response`
+$ `npm install --save response-handler`
 
 # Ejemplos:
 
 ## Ejemplo 1
 
 ``` js
-const { Response, errors } = require('insac-response')
+const { Response, errors } = require('response-handler')
 const express = require('express')
 
 const app = express()
@@ -79,7 +79,7 @@ app.listen(4000)
 `curl -H "Content-Type: application/json" -X POST http://localhost:4000/libros`
 ``` json
 {
-  "name": "InsacResponseError",
+  "name": "ResponseHandlerError",
   "status": "error",
   "type": "PRECONDITION_FAILED",
   "code": 412,
@@ -97,9 +97,9 @@ Tambien es posible configurar el formato de las respuestas:
 ``` js
 function successFormat (result) {
   return {
-    status: result.status,
-    message: result.message,
-    data: result.data
+    status  : result.status,
+    message : result.message,
+    data    : result.data
   }
 }
 app.use(Response.success({ successFormat }))
@@ -153,7 +153,7 @@ res.error400([{ msg: 'msg1', dev: 'dev1' }, { msg: 'msg2', dev: 'dev2' }])
 
 ``` json
 {
-  "name": "InsacResponseError",
+  "name": "ResponseHandlerError",
   "status": "error",
   "type": "BAD_REQUEST",
   "code": 400,

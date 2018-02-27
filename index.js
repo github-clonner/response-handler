@@ -1,1 +1,1 @@
-module.exports = require('./lib/insac-response')
+module.exports = require('./lib/response-handler')

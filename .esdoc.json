@@ -12,9 +12,9 @@
         "coverage": { "enable": true },
         "typeInference": { "enable": true },
         "brand": {
-          "title": "Insac Response",
+          "title": "Response Handler",
           "description": "Configura el formato de la respuesta de un servicio web creado con express.",
-          "repository": "https://github.com/waquispe/insac-response"
+          "repository": "https://github.com/waquispe/response-handler"
         }
       }
     }
