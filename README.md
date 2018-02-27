@@ -39,7 +39,7 @@ $ `npm install --save response-handler`
 
 ``` js
 const { Response, errors } = require('response-handler')
-const express = require('express')
+const express              = require('express')
 
 const app = express()
 app.use(bodyParser.json())
@@ -63,7 +63,7 @@ app.listen(4000)
 `curl -H "Content-Type: application/json" -X POST -d '{ titulo": "El cuervo" }' http://localhost:4000/libros`
 ``` json
 {
-  "name": "InsacResponseSuccess",
+  "name": "ResponseHandlerSuccess",
   "status": "success",
   "type": "OK",
   "code": 200,
@@ -127,7 +127,7 @@ res.success200([{ id: 1, titulo: 'El gato negro' }], 'Libro obtenido exitosament
 
 ``` json
 {
-  "name": "InsacResponseSuccess",
+  "name": "ResponseHandlerSuccess",
   "status": "success",
   "type": "OK",
   "code": 200,

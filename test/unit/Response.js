@@ -1,7 +1,7 @@
 /* global describe it expect */
-const express = require('express')
+const express    = require('express')
 const bodyParser = require('body-parser')
-const request = require('request')
+const request    = require('request')
 
 describe('\n - Clase: Response\n', () => {
   describe(` Método: success`, () => {
@@ -12,9 +12,9 @@ describe('\n - Clase: Response\n', () => {
 
       function successFormat (result) {
         return {
-          status: result.status,
-          message: result.message,
-          data: result.data
+          status  : result.status,
+          message : result.message,
+          data    : result.data
         }
       }
 
@@ -32,9 +32,9 @@ describe('\n - Clase: Response\n', () => {
       })
       app.listen(4000)
       let options = {
-        uri: `http://localhost:4000/libros`,
-        method: 'POST',
-        json: { titulo: 'El gato negro', precio: 11.99 }
+        uri    : `http://localhost:4000/libros`,
+        method : 'POST',
+        json   : { titulo: 'El gato negro', precio: 11.99 }
       }
       request(options, (error, response, body) => {
         if (error) { console.log(error); done() }
