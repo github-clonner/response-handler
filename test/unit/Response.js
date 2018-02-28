@@ -23,7 +23,7 @@ describe('\n - Clase: Response\n', () => {
 
       app.post('/libros', (req, res, next) => {
         if (!req.body.titulo) {
-          throw new errors.PreconditionFailedError()
+          throw new errors.PreconditionFailed()
         }
         res.success200(req.body, 'Libro obtenido exitosamente.')
       })
@@ -58,10 +58,10 @@ describe('\n - Clase: Response\n', () => {
           const { errors } = require(global.LIB)
           if (error) { console.log(error); done() }
           expect(body).to.have.property('name', 'ResponseHandlerError')
-          expect(body).to.have.property('status', errors.PreconditionFailedError.STATUS)
-          expect(body).to.have.property('type', errors.PreconditionFailedError.TYPE)
-          expect(body).to.have.property('code', errors.PreconditionFailedError.CODE)
-          expect(body).to.have.property('message', errors.PreconditionFailedError.MESSAGE)
+          expect(body).to.have.property('status', errors.PreconditionFailed.STATUS)
+          expect(body).to.have.property('type', errors.PreconditionFailed.TYPE)
+          expect(body).to.have.property('code', errors.PreconditionFailed.CODE)
+          expect(body).to.have.property('message', errors.PreconditionFailed.MESSAGE)
           expect(body).to.have.property('errors')
           expect(body.errors).to.be.an('array')
           expect(body.errors).to.have.lengthOf(1)
