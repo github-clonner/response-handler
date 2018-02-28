@@ -49,7 +49,7 @@ app.use(Response.error())
 
 app.post('/libros', (req, res, next) => {
   if (!req.body.titulo) {
-    throw new errors.PreconditionFailedError('Se requiere el título del libro.')
+    throw new errors.PreconditionFailed('Se requiere el título del libro.')
   }
   res.success(req.body)
 })
