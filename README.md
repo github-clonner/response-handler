@@ -4,7 +4,7 @@ Configura el formato de la respuesta de un servicio web creado con express.
 
 # Características
 
-- Envía 2 tipos de respuestas: exitosa (`success`) y fallida (`error`).
+- Envía respuestas de tipo `success` y `error`.
 - El formato de la respuesta es personalizable.
 - Se puede configurar para que todas las peticiones sean exitosas (`status: 200 Ok`).
 
@@ -18,7 +18,8 @@ Configura el formato de la respuesta de un servicio web creado con express.
 | `NOT_FOUND` | 404 | Recurso no disponible | El servidor no puede encontrar el recurso solicitado. | Ocurre generalmente cuando el registro no existe o ha sido eliminado. |
 | `CONFLICT` | 409 | Conflicto | Hubo un error durante el proceso, inténtelo nuevamente. | Ocurre generalmente cuando el registro ha sido modificado y no se puede continuar con el proceso. |
 | `PRECONDITION_FAILED` | 412 | Condición insuficiente | No se cumple con algunas condiciones que son necesarias para completar la tarea. | Ocurre cuando no se cumple con ciertas condiciones (validaciones lógicas), por lo general cuando los datos de entrada en conjunto no tienen un sentido lógico. |
-| `INTERNAL_SERVER_ERROR` | 500 | Error interno | Hubo un error inesperado, inténtelo mas tarde. | Este error nunca debería ocurrir, generalmente son errores desconocidos que no han sido controlados. |
+| `INVALID_TOKEN` | 498 | Token inválido | El token es inválido | Ocurre generalmente cuando el token ha expirado. |
+| `INTERNAL_SERVER` | 500 | Error interno | Hubo un error inesperado, inténtelo mas tarde. | Este error nunca debería ocurrir, generalmente son errores desconocidos que no han sido controlados. |
 
 ## Successes
 
