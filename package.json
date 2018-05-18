@@ -10,10 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waquispe/response-handler.git"
+    "url": "git+https://github.com/insacjs/response-handler.git"
   },
   "keywords": [
     "insac",
+    "insacjs",
     "rest",
     "response",
     "web",
@@ -22,9 +23,9 @@
   "author": "Wilmer Alex Quispe Quispe <q.wilmer.alex@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waquispe/response-handler/issues"
+    "url": "https://github.com/insacjs/response-handler/issues"
   },
-  "homepage": "https://github.com/waquispe/response-handler#readme",
+  "homepage": "https://github.com/insacjs/response-handler#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "esdoc": "^1.0.4",
