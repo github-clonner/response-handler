@@ -14,7 +14,7 @@
         "brand": {
           "title": "Response Handler",
           "description": "Configura el formato de la respuesta de un servicio web creado con express.",
-          "repository": "https://github.com/waquispe/response-handler"
+          "repository": "https://github.com/insacjs/response-handler"
         }
       }
     }
