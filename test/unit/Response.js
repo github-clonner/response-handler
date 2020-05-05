@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const request    = require('request')
 
 describe('\n - Clase: Response\n', () => {
-  describe(` Método: success`, () => {
+  describe(' Método: success', () => {
     it('Ejecución con parámetros', (done) => {
       const { Response, errors } = require(global.LIB)
       const app = express()
@@ -31,8 +31,8 @@ describe('\n - Clase: Response\n', () => {
         res.error(err)
       })
       app.listen(4000)
-      let options = {
-        uri    : `http://localhost:4000/libros`,
+      const options = {
+        uri    : 'http://localhost:4000/libros',
         method : 'POST',
         json   : { titulo: 'El gato negro', precio: 11.99 }
       }
